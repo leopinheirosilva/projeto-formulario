@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #6366EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 2px 4px 10px #00000050;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+a.btn {
+    background-color: #6366EA;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8em;
+    padding: 7px 10px;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #4F46E5;
+}
+
+h1::after {
+    background-color: #6366EA;
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+}
+
+div.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+label {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #A1A1AA;
+    font-size: 0.9em;
+}
+
+div.container_input {
+    margin: 10px 7px;
+}
+
+div.input-area {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 3px 5px #00000050;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+div.container_input.invalid label {
+    color: red;
+}
+
+div.container_input.invalid .input-area {
+    outline: 1px solid red;
+}
+
+input.date {
+    width: 100%;
+}
+
+.input-area .password-icon:hover {
+    color: #828288;
+    cursor: pointer;
+}
+
+.input-area:focus-within {
+    outline: 2px solid #6366EA;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    color: black;
+}
+
+input[type="radio"] {
+    accent-color: #6366EA;
+}
+
+span.mensagem_erro {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+    max-width: 200px;
+}
+
+div.input_radio {
+    margin: 15px 7px;
+}
+
+div.input_radio label {
+    margin-right: 10px;
+}
+
+div.input_radio>p {
+    margin-bottom: 10px;
+}
+
+button.cadastro {
+    background-color: #6366EA;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4F46E5;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100vw;
+        height: 100%;
+        border-radius: 0px;
+    }
+    div.grid-container {
+        grid-template-columns: 1fr;
+    }
+    .input-area i {
+        float: right;
+    }
+}
