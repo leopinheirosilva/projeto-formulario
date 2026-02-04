@@ -1,6 +1,6 @@
 # Projeto Formulário
 
-Aplicação de exemplo para criação e validação de formulários web. Inclui validação de campos, feedback visual e envio (simulado) dos dados.
+Aplicação de exemplo para criação e validação de formulários web.
 
 ![gif-demonstração](midias/demo.gif)
 
