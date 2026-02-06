@@ -7,17 +7,22 @@ Aplicação de exemplo para criação e validação de formulários web.
 ## Funcionalidades
 
 - Campos de formulário com validação (ex.: email, nome, CPF).
-- Feedback visual de erros e sucessos.
+- Feedback visual de erros.
 
 ## Tech Stack
 
-- Front-end: HTML, CSS, JavaScript
-- Deploy: GitHub Pages
+- HTLM
+- CSS
+- JavaScript
+
+## Deploy
+
+- GitHub Pages
+
+Clique [aqui](https://leopinheirosilva.github.io/projeto-formulario/) para acessar o site!
 
 ## Contato
 
 Email: <leonardopinheirosilva16@gmail.com>
 
 LinkedIn: <https://www.linkedin.com/in/leonardo-pinheiro-13ba26281/>
-
-Clique [aqui](https://leopinheirosilva.github.io/projeto-formulario/) para acessar o site!
